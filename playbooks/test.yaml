@@ -1,9 +1,7 @@
 ---
-- name: Test name
-  tasks:
-    - name: Test task
-      shell: echo "hello world"
-      register: result
-    - name: echo result
-      debug:
-        msg: "{{ result.stdout_lines }}"
+- name: Test task
+  shell: echo "hello world"
+  register: result
+- name: echo result
+  debug:
+    msg: "{{ result.stdout_lines }}"
