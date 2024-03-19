@@ -4,7 +4,7 @@
   become: true
   tasks:
     - name: Test task
-      shell: 'echo "hello world"'
+      shell: echo "hello world"
       register: result
     - name: echo result
       debug:
