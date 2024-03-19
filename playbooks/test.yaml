@@ -1,6 +1,6 @@
 ---
 - name: Test name
-  hosts: site
+  hosts: builder
   become: true
   tasks:
     - name: Test task
