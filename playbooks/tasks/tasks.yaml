@@ -1,0 +1,3 @@
+---
+- name: ping
+  shell: echo hello
