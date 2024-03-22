@@ -11,4 +11,4 @@
       community.docker.docker_login:
         username: konevva
         password: dckr_pat_JcwVnMqIzZUUfnaFL2inq715jH8
-        registry_url: https://hub.docker.com/repository/docker/konevva/test-ansible-helloworld/
+        registry_url: https://hub.docker.com
