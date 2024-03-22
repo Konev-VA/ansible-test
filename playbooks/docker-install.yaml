@@ -9,7 +9,7 @@
         repo: https://github.com/Konev-VA/test-ansible-helloworld.git
         dest: /home/test-ansible-helloworld
     - name: install docker
-      dnf:
+      apt:
         name:
           - docker-ce 
           - docker-ce-cli 
