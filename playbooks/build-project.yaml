@@ -7,7 +7,7 @@
     - name: pull project
       git:
         repo: https://github.com/Konev-VA/test-ansible-helloworld.git
-        dest: ~/
+        dest: /home/user/test-ansible-helloworld
     - name: build
       community.docker.docker_login:
         username: konevva
