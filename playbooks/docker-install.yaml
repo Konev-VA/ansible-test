@@ -5,6 +5,7 @@
   become: true
   tasks:
     - name: add docker repo
+      import_tasks: ./tasks/add-docker-repo.yaml
     - name: install docker
       apt:
         name:
