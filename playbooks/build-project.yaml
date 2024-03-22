@@ -8,6 +8,6 @@
         repo: https://github.com/Konev-VA/test-ansible-helloworld.git
         dest: /home/user/test-ansible-helloworld
     - name: login to docker
-      community.docker.docker_login:
+      docker_login:
         username: konevva
         password: dckr_pat_JcwVnMqIzZUUfnaFL2inq715jH8
