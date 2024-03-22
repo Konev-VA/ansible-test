@@ -32,8 +32,3 @@
         name: user
         groups: docker
         append: yes
-    - name: Change file ownership, group and permissions
-      ansible.builtin.file:
-        path: /usr/local/bin/docker-compose
-        owner: user
-        group: user
