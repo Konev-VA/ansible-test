@@ -1,0 +1,14 @@
+---
+- name: build project
+  hosts: all
+  remote_user: user
+  become: true
+  tasks:
+    - name: pull project
+      git:
+        repo: https://github.com/Konev-VA/test-ansible-helloworld.git
+        dest: ~
+    - name: build
+      community.docker.docker_login:
+        username: konevva
+        password: dckr_pat_JcwVnMqIzZUUfnaFL2inq715jH8
