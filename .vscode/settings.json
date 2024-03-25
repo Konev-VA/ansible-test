@@ -1,3 +1,6 @@
 {
-	"ansible.python.interpreterPath": "c:\\Users\\vlad\\AppData\\Local\\Microsoft\\WindowsApps\\python3.12.exe"
+	"ansible.python.interpreterPath": "c:\\Users\\vlad\\AppData\\Local\\Microsoft\\WindowsApps\\python3.12.exe",
+	"yaml.schemas": {
+		"https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json": "untitled:Untitled-1"
+	}
 }

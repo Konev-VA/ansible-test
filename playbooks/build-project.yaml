@@ -12,10 +12,10 @@
     #     name: hello-world
     #     image: hello-world:latest
     #     state: started
-    # - name: login to docker
-    #   shell: docker login -u konevva -p dckr_pat_JcwVnMqIzZUUfnaFL2inq715jH8
     - name: login to docker
-      community.docker.docker_login:
-        username: konevva
-        password: dckr_pat_JcwVnMqIzZUUfnaFL2inq715jH8
-        registry_url: https://hub.docker.com
+      shell: docker login -u konevva -p dckr_pat_JcwVnMqIzZUUfnaFL2inq715jH8
+    # - name: login to docker
+    #   community.docker.docker_login:
+    #     username: konevva
+    #     password: dckr_pat_JcwVnMqIzZUUfnaFL2inq715jH8
+    #     registry_url: https://hub.docker.com
