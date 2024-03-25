@@ -18,4 +18,10 @@
     #   community.docker.docker_login:
     #     username: konevva
     #     password: dckr_pat_JcwVnMqIzZUUfnaFL2inq715jH8
-    #     registry_url: https://hub.docker.com
+    #     registry_url: https://hub.docker.com\
+    - name: build project
+      docker_image:
+        path: /home/user/test-ansible-helloworld
+        name: helloworld
+        tag: latest
+        state: build
