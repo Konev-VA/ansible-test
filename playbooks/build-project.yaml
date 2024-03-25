@@ -24,4 +24,4 @@
         path: /home/user/test-ansible-helloworld
         name: helloworld
         tag: latest
-        state: build
+        state: present
