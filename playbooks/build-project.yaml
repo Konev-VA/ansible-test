@@ -20,7 +20,7 @@
     #     password: dckr_pat_JcwVnMqIzZUUfnaFL2inq715jH8
     #     registry_url: https://hub.docker.com\
     - name: build project
-      community.docker.docker_image:
+      docker_image:
         name: test-ansible-helloworld
         build:
           path: /home/user/test-ansible-helloworld
