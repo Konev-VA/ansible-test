@@ -26,4 +26,4 @@
           path: /home/user/test-ansible-helloworld
           args:
             listen_port: 8080
-      source: build
+        source: build
