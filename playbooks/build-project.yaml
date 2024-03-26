@@ -2,8 +2,7 @@
 - name: build project
   hosts: all
   remote_user: user
-  become: true
-  become_user: root
+  become: yes
   tasks:
     # - name: clone project
     #   git:
@@ -34,7 +33,6 @@
         name:
           - nginx
         state: latest
-        update_cache: yes
     - name: nginx systemd
       systemd:
         name: nginx
