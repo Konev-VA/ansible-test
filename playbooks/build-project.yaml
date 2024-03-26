@@ -27,6 +27,10 @@
     #       args:
     #         listen_port: 8080
     #     source: build
+    - name: install nginx
+      apt: 
+        name: nginx
+        state: latest
     - name: nginx systemd
       systemd:
         name: nginx
