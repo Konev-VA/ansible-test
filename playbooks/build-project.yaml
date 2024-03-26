@@ -30,8 +30,10 @@
     #     source: build
     - name: install nginx
       apt: 
-        name: nginx
+        name: 
+          - nginx
         state: latest
+        update_cache: yes
     - name: nginx systemd
       systemd:
         name: nginx
