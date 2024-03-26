@@ -1,8 +1,7 @@
 ---
 - name: build project
-  hosts: all
+  hosts: workers
   remote_user: user
-  become: yes
   tasks:
     # - name: clone project
     #   git:
@@ -28,13 +27,17 @@
     #       args:
     #         listen_port: 8080
     #     source: build
-    - name: install nginx
-      apt:
-        name:
-          - nginx
-        state: latest
-    - name: nginx systemd
-      systemd:
-        name: nginx
-        enabled: yes
-        state: started
+    # - name: install nginx
+    #   apt:
+    #     name:
+    #       - nginx
+    #     state: latest
+    # - name: nginx systemd
+    #   systemd:
+    #     name: nginx
+    #     enabled: yes
+    #     state: started
+    - name: Execute task on a free server from the workers group
+      debug:
+        msg: "This task is executed on {{ inventory_hostname }}"
+      delegate_to: "{{ groups['workers'] | free }}"
