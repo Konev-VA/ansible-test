@@ -3,6 +3,7 @@
   hosts: all
   remote_user: user
   become: true
+  become_user: root
   tasks:
     # - name: clone project
     #   git:
@@ -29,8 +30,8 @@
     #         listen_port: 8080
     #     source: build
     - name: install nginx
-      apt: 
-        name: 
+      apt:
+        name:
           - nginx
         state: latest
         update_cache: yes
